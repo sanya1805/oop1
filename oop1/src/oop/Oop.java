@@ -11,14 +11,17 @@ public class Oop {
         
         int select;
         do {
-            System.out.println("กด 1 ชำระบริการค่าน้ำ");
-            System.out.println("กด 2 ชำระบริการค่าโทรสับ");
+            System.out.println("=================Welcome!==================");
+            
+            System.out.println("กด [1] ชำระบริการค่าน้ำ");
+            System.out.println("กด [2] ชำระบริการค่าโทรศัพท์");
             Scanner n = new Scanner(System.in);
             System.out.print("Enter number : ");
             number = n.nextInt();
             while (number != 1 && number != 2) {
-                System.out.println("กด 1 ชำระบริการค่าน้ำ");
-                System.out.println("กด 2 ชำระบริการค่าโทรสับ");
+                System.out.println("+++++++++++++++++++++++++++++++++++++");
+                System.out.println("กด [1] ชำระบริการค่าน้ำ");
+                System.out.println("กด [2] ชำระบริการค่าโทรสับ");
                 System.out.print("Enter number : ");
                 number = n.nextInt();
             }
@@ -29,8 +32,8 @@ public class Oop {
 
             
             } else {
-                System.out.println("แบบรายเดือน กด 1");
-                System.out.println("แบบเติมเงิน  กด 2 ");
+                System.out.println("แบบรายเดือน กด [1]");
+                System.out.println("แบบเติมเงิน  กด [2] ");
                 Scanner s = new Scanner(System.in);
                 System.out.print("Enter number : ");
                 select = s.nextInt();
@@ -50,7 +53,7 @@ public class Oop {
             }
 
         } while (number != 1 && number != 2);
-        for(int t=0; t<30; t++){
+        for(int t=0; t<45; t++){
         System.out.print("=");
         }
     }
@@ -72,16 +75,19 @@ public class Oop {
         String name1t = null;
         String pass1t = null;
 
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("คุณเป็นสมาชิกหรือไม");
-        System.out.println("ถ้าเป็น กด 1");
-        System.out.println("ถ้าไม่เป็น กด 2");
-        System.out.println("ถ้าไม่เป็นสมาชิก คิดค่าบริการเพิ่ม 15 บาท");
-        System.out.print("กดหมายเลข : ");
+        System.out.println(">ถ้าเป็น   กด [1]");
+        System.out.println(">ถ้าไม่เป็น กด [2]");
+        System.out.println("  *หมายเหตุ : ถ้าไม่เป็นสมาชิก คิดค่าบริการเพิ่ม 15 บาท");
+        System.out.print(">>>กดหมายเลข : ");
         Scanner CT = new Scanner(System.in);
         int CT1 = CT.nextInt();
 
         if (CT1 == 1) {
-            do {
+            //do {
+                System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
+                System.out.println("===เข้าระบบ(สมาชิก)=== ");
                 System.out.print("กรอกชื่อ : ");
                 Scanner NC = new Scanner(System.in);
                 name1 = NC.nextLine();
@@ -89,7 +95,21 @@ public class Oop {
                 System.out.print("กรอกรหัส : ");
                 Scanner NP = new Scanner(System.in);
                 pass1 = NP.nextLine();
-            } while (!(name.equals(name1) && pass.equals(pass)) && (nameS.equals(name1S) && passS.equals(pass1S)) && (namet.equals(name1t) && passt.equals(pass1t)));
+                /*} while (!(name.equals(name1) || pass.equals(pass)) 
+                    && (nameS.equals(name1S) || passS.equals(pass1S)) 
+                    && (namet.equals(name1t) || passt.equals(pass1t)));*/
+                    while (!(name.equals(name1) || pass.equals(pass)) 
+                    && (nameS.equals(name1S) || passS.equals(pass1S)) 
+                    && (namet.equals(name1t) || passt.equals(pass1t)));
+                    {
+                    System.out.println(">>>>ชื่อหรือรหัสไม่ถูกต้อง!!!<<<<");
+                    System.out.print("กรอกชื่อ : ");
+                    name1 = NC.nextLine();
+
+                    System.out.print("กรอกรหัส : ");
+                    pass1 = NP.nextLine();  
+                    }
+                    
             if (number == 1) {
                 waterbill wb = new waterbill();
                 wb.bill();
@@ -104,7 +124,7 @@ public class Oop {
             if (number == 1) {
                 waterbill wb = new waterbill();
                 wb.bill();
-                wb.billw();
+                //wb.billw();
                 wb.billw1();//+15
                 
             } else if (number == 2) {

@@ -125,7 +125,7 @@ public abstract class Phone {
              System.out.println("0987125853 TRUE ");
              System.out.println("ยอดเงินคงเหลือ "+TRUE+"บาท");
         
-        }}while(am!="0899763176" && am!="0948012333" && am!="0987125853" );
+        }}while(am=="0899763176" && am=="0948012333" && am=="0987125853" );
         
         System.out.println("กรุณาเลือกจำนวณเงิน");
         System.out.println("20");
@@ -153,7 +153,7 @@ public abstract class Phone {
        
                
                 sum = ch+15;
-                System.out.println("ค่าบริการทั้งหมด" +sum);
+                System.out.println("ค่าบริการทั้งหมด " +sum);
         
         }
     
