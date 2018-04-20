@@ -22,7 +22,7 @@ public abstract class Phone {
    
    
     public void Enternumberphone() {
-        
+        System.out.println("----------------------");
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner np = new Scanner(System.in);
         String np1 = np.nextLine();
@@ -102,16 +102,20 @@ public abstract class Phone {
     }//เม็ด
     public void addmoney() {
         
-     
-     
-     
-     
+        
         System.out.println("----------------------");
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner a = new Scanner(System.in);
         am = a.nextLine();
+        while(am=="0899763176" && am=="0948012333" && am=="0987125853"){
+            System.out.println("----------------------");
+            System.out.println("ไม่พบเบอร์ในระบบ! กรุณากรอกใหม่");
+            System.out.print("กรุณาใส่เบอร์ : ");
+            am = a.nextLine();
+        }
         
-        do{
+        
+        //do{
             System.out.println("-----------------------");
         if(am.equals("0899763176")){
             
@@ -127,7 +131,8 @@ public abstract class Phone {
              System.out.println("0987125853 TRUE ");
              System.out.println("ยอดเงินคงเหลือ "+TRUE+"บาท");
         
-        }}while(am=="0899763176" && am=="0948012333" && am=="0987125853" );
+        }
+        //}while(am=="0899763176" && am=="0948012333" && am=="0987125853" );
         
         System.out.println("กรุณาเลือกจำนวณเงิน");
         System.out.println("20");
@@ -140,7 +145,7 @@ public abstract class Phone {
         System.out.print("กรุณาใส่จำนวนเงินที่ต้องการ : ");
         Scanner a1 = new Scanner(System.in);
         am1 = a1.nextDouble();
-      
+       //}while(am=="0899763176" && am=="0948012333" && am=="0987125853" );
            
     }
     

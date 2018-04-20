@@ -100,6 +100,7 @@ public class Oop {
                 System.out.print("กรอกรหัส : ");
                 Scanner NP = new Scanner(System.in);
                 pass1 = NP.nextLine();
+                System.out.println("-----------------------------");
                 /*} while (!(name.equals(name1) || pass.equals(pass)) 
                     && (nameS.equals(name1S) || passS.equals(pass1S)) 
                     && (namet.equals(name1t) || passt.equals(pass1t)));*/
@@ -113,6 +114,7 @@ public class Oop {
 
                     System.out.print("กรอกรหัส : ");
                     pass1 = NP.nextLine();  
+                    System.out.println("-----------------------------");
                     }
                     
             if (number == 1) {
