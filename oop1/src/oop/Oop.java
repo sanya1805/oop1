@@ -32,12 +32,14 @@ public class Oop {
 
             
             } else {
+                do{
                 System.out.println("แบบรายเดือน กด [1]");
                 System.out.println("แบบเติมเงิน  กด [2] ");
                 Scanner s = new Scanner(System.in);
                 System.out.print("Enter number : ");
                 select = s.nextInt();
-
+                }while(select !=1&&select!=2);
+                
                 if (select == 1) {
 
                     Oop pp = new Oop();
@@ -59,7 +61,8 @@ public class Oop {
     }
 
     public void membercus()  {
-
+        int CT1;
+        
         String name = "fah";
         String pass = "1234";
         String name1;
@@ -77,12 +80,14 @@ public class Oop {
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("คุณเป็นสมาชิกหรือไม");
+        do{
         System.out.println(">ถ้าเป็น   กด [1]");
         System.out.println(">ถ้าไม่เป็น กด [2]");
         System.out.println("  *หมายเหตุ : ถ้าไม่เป็นสมาชิก คิดค่าบริการเพิ่ม 15 บาท");
         System.out.print(">>>กดหมายเลข : ");
         Scanner CT = new Scanner(System.in);
-        int CT1 = CT.nextInt();
+           CT1 = CT.nextInt();
+        }while( CT1 != 1 && CT1!=2);
 
         if (CT1 == 1) {
             //do {

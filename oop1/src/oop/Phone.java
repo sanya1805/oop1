@@ -82,10 +82,11 @@ public abstract class Phone {
             System.out.println("ยอดค้างชำระรวม 690 บาท");
             System.out.println("- เดือนที่ 1 300 บาท");
             System.out.println("- เดือนที่ 2 390 บาท");
-            System.out.print("กรุณาใส่จำนวนเงินที่ต้องการชำระ : ");
+            System.out.print(">>กรุณาใส่จำนวนเงินที่ต้องการชำระ : ");
             Scanner ch1 = new Scanner(System.in);
              ch = ch1.nextDouble();
-
+             
+            
             if (ch == 300) {
                 System.out.println("ยอดค้างชำระคงเหลือ 390 บาท");
             } else if (ch == 390) {
@@ -105,12 +106,13 @@ public abstract class Phone {
      
      
      
-    
+        System.out.println("----------------------");
         System.out.print("กรุณาใส่เบอร์ : ");
         Scanner a = new Scanner(System.in);
         am = a.nextLine();
         
         do{
+            System.out.println("-----------------------");
         if(am.equals("0899763176")){
             
              System.out.println("0899763176 AIS ");
