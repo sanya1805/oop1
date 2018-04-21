@@ -12,29 +12,29 @@ public abstract class water753  implements intoWater {
     public double sumwaterbill;
     
     
-    @Override
+  
     public void intowater1() {
         
-        System.out.println("=============Water Bill Payment=============");
+        System.out.println("==================ชำระบิลค่าน้ำ==================");
        
     }
     
     public void pagewateruser() {
    
    
-        System.out.println("Enter Detail!! ");
+        System.out.println(">>>กรุณากรอกรายละเอียด ");
         
-        System.out.print("Enter Start Meter : ");
+        System.out.print("มิเตอร์เริ่มต้น : ");
         Scanner waterStart = new Scanner(System.in);
         wtStart = waterStart.nextInt();
         
-        System.out.print("Enter End Meter : ");
+        System.out.print("มิเตอร์ล่าสุด : ");
         Scanner waterEnd = new Scanner(System.in);
         wtEnd = waterEnd.nextInt();
-        System.out.println("-------------------------------");
+        System.out.println("----------------------------------------------");
             
         this.SumMeterWater();
-        System.out.println("Total Meter : " +sumwater+ " Unit");
+        System.out.println("มิเตอร์ทั้งหมด คือ " +sumwater+ " Unit");
         
         
     }  
@@ -61,7 +61,7 @@ public abstract class water753  implements intoWater {
                 price = sumwater*21.20;
             }
             
-            System.out.println("Water Price = " +price+ " THB");
+            System.out.println("ยอดการใช้น้ำทั้งหมด = " +price+ " THB");
         }
        public void memberwater() {
             

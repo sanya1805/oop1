@@ -11,7 +11,7 @@ public class Oop {
         
         int select;
         do {
-            System.out.println("=================Welcome!==================");
+            System.out.println("===================Welcome!====================");
             
             System.out.println("กด [1] ชำระบริการค่าน้ำ");
             System.out.println("กด [2] ชำระบริการค่าโทรศัพท์");
@@ -27,7 +27,6 @@ public class Oop {
             }
 
             if (number == 1) {
-                 //System.out.println("----------------- น้ำ -------------------");
                 Oop pp = new Oop();
                 pp.membercus();
 
@@ -67,8 +66,6 @@ public class Oop {
         String ues,ues1;
         String name = "fah";
         String pass = "1234";
-        //String name1;
-       // String pass1;
 
         String nameS = "sunya";
         String passS = "4567";
@@ -77,9 +74,8 @@ public class Oop {
         String namet = "Teacher";
         String passt = "7890";
        
-
-        System.out.println("++++++++++++++++++++++++++++++++++++++++++");
-        System.out.println("คุณเป็นสมาชิกหรือไม");
+        System.out.println("===============================================");
+        System.out.println("คุณเป็นสมาชิกหรือไม่");
         do{
         System.out.println(">ถ้าเป็น   กด [1]");
         System.out.println(">ถ้าไม่เป็น กด [2]");
@@ -91,8 +87,7 @@ public class Oop {
 
         if (CT1 == 1) {
             do {
-                System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
-                System.out.println("================เข้าระบบ(สมาชิก)============= ");
+                System.out.println("=================เข้าระบบ(สมาชิก)============== ");
                 System.out.print("กรอกชื่อ : ");
                 Scanner NC = new Scanner(System.in);
                 ues = NC.nextLine();
@@ -101,7 +96,7 @@ public class Oop {
                 Scanner NP = new Scanner(System.in);
                 ues1 = NP.nextLine();
                 
-                System.out.println("-------------------------------------------");
+              
                 
                 } while (!(ues.equals(name) && ues1.equals(pass)) 
                     &&!(ues.equals(nameS) && ues1.equals(passS)) 
@@ -122,7 +117,6 @@ public class Oop {
             if (number == 1) {
                 waterbill wb = new waterbill();
                 wb.bill();
-                //wb.billw();
                 wb.billw1();//+15
                 
             } else if (number == 2) {

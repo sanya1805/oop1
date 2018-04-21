@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package oop;
 
 import java.util.Scanner;
@@ -16,7 +12,7 @@ public abstract class Phone {
     public double dtac = 50;
     public double TRUE = 20;
 
-    //public double vatphone = 15;
+ 
     public void Enternumberphone() {
         String np1;
         System.out.println("---------------------------------------------");
@@ -40,22 +36,22 @@ public abstract class Phone {
             if (ch == 400) {
                 System.out.println("ยอดค้างชำระคงเหลือ 590 บาท");
                 sum = ch + 15;
-                // System.out.println("ค่าบริการทั้งหมด " +sum);
+                
 
             } else if (ch == 590) {
                 System.out.println("ยอดค้างชำระคงเหลือ 400 บาท");
                 sum = ch + 15;
-                // System.out.println("ค่าบริการทั้งหมด " +sum);
+                
 
             } else if (ch == 990) {
                 System.out.println("ยอดค้างชำระคงเหลือ 0 บาท");
                 sum = ch + 15;
-                // System.out.println("ค่าบริการทั้งหมด " +sum);
+                
             } else {
                 double some = 990 - ch;
                 System.out.println("ยอดค้างชำระคงเหลือ " + some + "บาท");
                 sum = ch + 15;
-                // System.out.println(" ค่าบริการทั้งหมด" +sum);
+               
             }
         } else if (np1.equals("0844070204")) {
             System.out.println("0844070204 DTAC ");
@@ -99,7 +95,7 @@ public abstract class Phone {
 
         }
 
-    }//เม็ด
+    }//method
 
     public void addmoney() {
             System.out.println("================= แบบบเติมเงิน ============== ");
@@ -128,14 +124,6 @@ public abstract class Phone {
 
         }
         
-        
-        /*System.out.println("20");
-        System.out.println("30");
-        System.out.println("50");
-        System.out.println("90");
-        System.out.println("100");
-        System.out.println("150");
-        System.out.println("200");*/
         do{
         System.out.print("กรุณาใส่จำนวนเงินที่ต้องการ เริ่มต้นที่ 10 บาท: ");
         Scanner a1 = new Scanner(System.in);
