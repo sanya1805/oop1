@@ -7,10 +7,11 @@ public abstract class monthly extends Phone implements showphone {
     }
     
     public  void show(){    
-     
-    
+     //System.out.println("----------------- โทรศัพท์ -------------------");
+
     }
     public void sphone(){
+    
     super.Enternumberphone();
     super.member();
     this.show();

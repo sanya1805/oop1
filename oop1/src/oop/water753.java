@@ -14,7 +14,7 @@ public abstract class water753  implements intoWater {
     
     @Override
     public void intowater1() {
-        System.out.println("--------------------------------------------");
+        
         System.out.println("=============Water Bill Payment=============");
        
     }

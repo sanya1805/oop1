@@ -11,7 +11,7 @@ public class money extends Phone {
     
 
     public void show() {
-        System.out.println("======แบบเติมเงิน========");
+        //System.out.println("=============================");
         super.addmoney();
         
     }

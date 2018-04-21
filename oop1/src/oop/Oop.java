@@ -21,17 +21,19 @@ public class Oop {
             while (number != 1 && number != 2) {
                 System.out.println("+++++++++++++++++++++++++++++++++++++");
                 System.out.println("กด [1] ชำระบริการค่าน้ำ");
-                System.out.println("กด [2] ชำระบริการค่าโทรสับ");
+                System.out.println("กด [2] ชำระบริการค่าโทรศัพท์");
                 System.out.print("Enter number : ");
                 number = n.nextInt();
             }
 
             if (number == 1) {
+                 //System.out.println("----------------- น้ำ -------------------");
                 Oop pp = new Oop();
                 pp.membercus();
 
             
             } else {
+                System.out.println("----------------- โทรศัพท์ -------------------");
                 do{
                 System.out.println("แบบรายเดือน กด [1]");
                 System.out.println("แบบเติมเงิน  กด [2] ");
@@ -39,9 +41,9 @@ public class Oop {
                 System.out.print("Enter number : ");
                 select = s.nextInt();
                 }while(select !=1&&select!=2);
-                
+               
                 if (select == 1) {
-
+                    
                     Oop pp = new Oop();
                     pp.membercus();
 
@@ -62,21 +64,19 @@ public class Oop {
 
     public void membercus()  {
         int CT1;
-        
+        String ues,ues1;
         String name = "fah";
         String pass = "1234";
-        String name1;
-        String pass1;
+        //String name1;
+       // String pass1;
 
         String nameS = "sunya";
         String passS = "4567";
-        String name1S = null;
-        String pass1S = null;
+       
 
         String namet = "Teacher";
         String passt = "7890";
-        String name1t = null;
-        String pass1t = null;
+       
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("คุณเป็นสมาชิกหรือไม");
@@ -90,33 +90,24 @@ public class Oop {
         }while( CT1 != 1 && CT1!=2);
 
         if (CT1 == 1) {
-            //do {
+            do {
                 System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
-                System.out.println("===เข้าระบบ(สมาชิก)=== ");
+                System.out.println("================เข้าระบบ(สมาชิก)============= ");
                 System.out.print("กรอกชื่อ : ");
                 Scanner NC = new Scanner(System.in);
-                name1 = NC.nextLine();
+                ues = NC.nextLine();
 
                 System.out.print("กรอกรหัส : ");
                 Scanner NP = new Scanner(System.in);
-                pass1 = NP.nextLine();
-                System.out.println("-----------------------------");
-                /*} while (!(name.equals(name1) || pass.equals(pass)) 
-                    && (nameS.equals(name1S) || passS.equals(pass1S)) 
-                    && (namet.equals(name1t) || passt.equals(pass1t)));*/
-                    while (!(name.equals(name1) || pass.equals(pass)) 
-                    && (nameS.equals(name1S) || passS.equals(pass1S)) 
-                    && (namet.equals(name1t) || passt.equals(pass1t)));
-                    {
-                    System.out.println(">>>>ชื่อหรือรหัสไม่ถูกต้อง!!!<<<<");
-                    System.out.print("กรอกชื่อ : ");
-                    name1 = NC.nextLine();
-
-                    System.out.print("กรอกรหัส : ");
-                    pass1 = NP.nextLine();  
-                    System.out.println("-----------------------------");
-                    }
-                    
+                ues1 = NP.nextLine();
+                
+                System.out.println("-------------------------------------------");
+                
+                } while (!(ues.equals(name) && ues1.equals(pass)) 
+                    &&!(ues.equals(nameS) && ues1.equals(passS)) 
+                    &&!(ues.equals(namet) && ues1.equals(passt)));
+            
+                   
             if (number == 1) {
                 waterbill wb = new waterbill();
                 wb.bill();
