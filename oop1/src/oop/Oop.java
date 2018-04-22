@@ -7,7 +7,8 @@ public class Oop {
     public static int number ;
 
     public static void main(String[] args) {
-        
+     String yes;
+        do{  
         int select;
         do {
             System.out.println("===================Welcome!====================");
@@ -17,6 +18,7 @@ public class Oop {
             Scanner n = new Scanner(System.in);
             System.out.print("Enter number : ");
             number = n.nextInt();
+            
             while (number != 1 && number != 2) {
                 System.out.println("+++++++++++++++++++++++++++++++++++++");
                 System.out.println("กด [1] ชำระบริการค่าน้ำ");
@@ -58,7 +60,13 @@ public class Oop {
         for(int t=0; t<45; t++){
         System.out.print("=");
         }
-    }
+        System.out.print("\nต้องการชำระบริการเพิ่ม (y) : ");
+        Scanner y = new Scanner(System.in);
+        yes =y.nextLine();
+      
+      }while(yes.equals("Y")||yes.equals("y"));
+        
+    }//main
 
     public void membercus()  {
         int CT1;
