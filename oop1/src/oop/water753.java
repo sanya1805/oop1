@@ -1,4 +1,3 @@
-
 package oop;
 
 import java.util.Scanner;
@@ -11,8 +10,6 @@ public abstract class water753  implements intoWater {
     double price = 0.00;
     public double sumwaterbill;
     
-    
-  
     public void intowater1() {
         
         System.out.println("==================ชำระบิลค่าน้ำ==================");
@@ -24,6 +21,8 @@ public abstract class water753  implements intoWater {
    
         System.out.println(">>>กรุณากรอกรายละเอียด ");
         
+        do{
+        System.out.println("มิเตอร์ล่าสุดต้องมากกว่ามิเตอร์เริ่มต้นเท่านั้น!");
         System.out.print("มิเตอร์เริ่มต้น : ");
         Scanner waterStart = new Scanner(System.in);
         wtStart = waterStart.nextInt();
@@ -32,14 +31,13 @@ public abstract class water753  implements intoWater {
         Scanner waterEnd = new Scanner(System.in);
         wtEnd = waterEnd.nextInt();
         System.out.println("----------------------------------------------");
-            
-        this.SumMeterWater();
-        System.out.println("มิเตอร์ทั้งหมด คือ " +sumwater+ " Unit");
+        }while(wtEnd<wtStart);
         
-        
+       this.SumMeterWater();
+       System.out.println("มิเตอร์ทั้งหมด คือ " +sumwater+ " Unit"); 
+             
     }  
    
-    
         public int SumMeterWater(){
                 sumwater = wtEnd - wtStart;
                 return sumwater;
