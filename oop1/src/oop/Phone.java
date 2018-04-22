@@ -22,7 +22,8 @@ public abstract class Phone {
             System.out.print("กรุณาใส่เบอร์ : ");
             Scanner np = new Scanner(System.in);
             np1 = np.nextLine();
-        } while (!(np1.equals("0620640330") || np1.equals("0844070204") || np1.equals("0904810371")));
+        } while (!(np1.equals("0620640330") || np1.equals("0844070204") 
+                || np1.equals("0904810371")));
 
         if (np1.equals("0620640330")) {
             System.out.println("0620640330 TRUE-H ");
@@ -50,9 +51,9 @@ public abstract class Phone {
             } else {
                 double some = 990 - ch;
                 System.out.println("ยอดค้างชำระคงเหลือ " + some + "บาท");
-                sum = ch + 15;
-               
+                sum = ch + 15;      
             }
+            
         } else if (np1.equals("0844070204")) {
             System.out.println("0844070204 DTAC ");
             System.out.println("ยอดค้างชำระรวม 1290 บาท");
@@ -106,7 +107,8 @@ public abstract class Phone {
             Scanner a = new Scanner(System.in);
             am = a.nextLine();
 
-        } while (!am.equals("0899763176") && !am.equals("0948012333") && !am.equals("0987125853"));
+        } while (!am.equals("0899763176") && !am.equals("0948012333") 
+                && !am.equals("0987125853"));
 
         if (am.equals("0899763176")) {
 

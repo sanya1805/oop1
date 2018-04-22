@@ -1,7 +1,4 @@
-
 package oop;
-
-
 
 public class money extends Phone {
 
@@ -11,8 +8,7 @@ public class money extends Phone {
     
 
     public void show() {
-        super.addmoney();
-        
+        super.addmoney();   
     }
 
     public void calculate() {
@@ -33,5 +29,4 @@ public class money extends Phone {
             System.out.println("เท่ากับ " + totalt + "บาท");
         }
     }
-
 }

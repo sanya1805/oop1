@@ -74,12 +74,7 @@ public abstract class water753  implements intoWater {
             sumwaterbill = price + 15;
             System.out.println("ค่าบริการทั้งหมด " +sumwaterbill);
     
-    }
-
- 
-        
-        
-        
+    }    
 }
 
 

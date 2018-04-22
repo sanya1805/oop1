@@ -9,15 +9,13 @@ public abstract class monthly extends Phone implements showphone {
     
     public  void show(){    
      
-
     }
+    
     public void sphone(){
     
     super.Enternumberphone();
     super.member();
-    
-    
-        }  
+    }  
     
     public  void Notmemb (){  
      super.Enternumberphone();
