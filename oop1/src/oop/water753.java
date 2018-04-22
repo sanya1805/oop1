@@ -31,7 +31,7 @@ public abstract class water753  implements intoWater {
         Scanner waterEnd = new Scanner(System.in);
         wtEnd = waterEnd.nextInt();
         System.out.println("----------------------------------------------");
-        }while(wtEnd<wtStart);
+        }while(this.wtEnd<this.wtStart);
         
        this.SumMeterWater();
        System.out.println("มิเตอร์ทั้งหมด คือ " +sumwater+ " Unit"); 
